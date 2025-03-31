@@ -1,0 +1,52 @@
+.player-box-container.reverse {
+    flex-direction: row-reverse;
+}
+
+body.light-theme {
+    .player-box-container {
+        background: var(--white);
+        color: var(--black);
+    }
+}
+
+.player-box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+
+    background: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+
+    .player-pic {
+        border: 1px solid var(--white);
+        box-sizing: border-box;
+        height: 40px;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    .player-name-and-role {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+
+        .player-name {
+            font-size: 1.1em;
+        }
+
+        .player-role {
+            font-size: 1.1em;
+            color: var(--teal);
+        }
+    }
+
+}
